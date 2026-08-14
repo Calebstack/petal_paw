@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="pawGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4b8b"/>
+      <stop offset="50%" stop-color="#ff2a73"/>
+      <stop offset="100%" stop-color="#ffb703"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#ff4b8b" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Soft Glow Circle -->
+  <circle cx="100" cy="100" r="88" fill="url(#pawGrad)" filter="url(#shadow)"/>
+
+  <!-- Inner White Card Background -->
+  <circle cx="100" cy="100" r="76" fill="#ffffff" opacity="0.15"/>
+
+  <!-- Central Paw Pad (Heart-shaped top) -->
+  <path d="M 100,105 
+           C 80,82 60,110 75,135 
+           C 85,150 115,150 125,135 
+           C 140,110 120,82 100,105 Z" 
+        fill="#ffffff"/>
+
+  <!-- 4 Toe / Petal Pads -->
+  <!-- Top Left Toe -->
+  <ellipse cx="68" cy="78" rx="13" ry="17" transform="rotate(-25 68 78)" fill="#ffffff"/>
+  
+  <!-- Top Center-Left Toe -->
+  <ellipse cx="88" cy="64" rx="13" ry="18" transform="rotate(-8 88 64)" fill="#ffffff"/>
+  
+  <!-- Top Center-Right Toe -->
+  <ellipse cx="112" cy="64" rx="13" ry="18" transform="rotate(8 112 64)" fill="#ffffff"/>
+  
+  <!-- Top Right Toe -->
+  <ellipse cx="132" cy="78" rx="13" ry="17" transform="rotate(25 132 78)" fill="#ffffff"/>
+
+  <!-- Cute Sparkle Accent -->
+  <path d="M 152,48 L 155,58 L 165,61 L 155,64 L 152,74 L 149,64 L 139,61 L 149,58 Z" fill="#ffffff" opacity="0.9"/>
+</svg>

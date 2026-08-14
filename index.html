@@ -3,118 +3,660 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="author" content="petal&paw">
-	<meta name="description" content="Website for petal&paw, a premium pet care service in Lagos, Nigeria. Showcasing grooming, daycare, and dog walking services with a focus on love and quality care for pets.">
-  <title>Petal & Paw | Premium Pet Care in Lagos</title>
-  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="bootstrap/font/bootstrap-icons.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="petal_paw.css">
+  <meta name="author" content="Petal & Paw">
+  <meta name="description" content="Petal & Paw is Lagos's premiere luxury pet grooming, daycare, and dog walking service. Serving Victoria Island, Lekki, Ikoyi, and Mainland Lagos with five-star care.">
+  <title>Petal & Paw | Luxury Pet Care & Grooming in Lagos</title>
+
+  <!-- Google Fonts & Bootstrap Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <!-- CSS Stylesheets -->
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/petal-pro.css" rel="stylesheet">
 </head>
 <body>
 
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#whyus">Why Us</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <!-- Sticky Glassmorphism Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="brand-logo" href="#">
+        <img src="assets/logo.svg" alt="Petal & Paw Logo" width="44" height="44">
+        <span>Petal & Paw</span>
+      </a>
+      
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2 text-dark"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2 mt-3 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="#whyus">Why Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="#testimonials">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="#contact">Contact</a>
+          </li>
+        </ul>
+        
+        <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+          <a href="https://wa.me/2348034567890" target="_blank" class="btn btn-custom btn-whatsapp px-3 py-2 text-decoration-none">
+            <i class="bi bi-whatsapp fs-5"></i>
+            <span class="d-none d-xl-inline">Chat on WhatsApp</span>
+          </a>
+          <button class="btn btn-custom btn-primary-custom px-4 py-2" data-bs-toggle="modal" data-bs-target="#bookingModal">
+            Book Now
+          </button>
+        </div>
+      </div>
+    </div>
   </nav>
 
-  <!-- Hero -->
-  <header id="home">
-    <div class="logo">Petal & Paw</div>
-    <p class="tagline">Nigeria's Most Loving Pet Grooming & Care Service 🌸🐾</p>
-    <a href="#contact" class="btn">Book Appointment Now</a>
-  </header>
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+    
+    <div class="container hero-content">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6 text-center text-lg-start">
+          <div class="badge-custom badge-gold mb-3">
+            <i class="bi bi-star-fill"></i>
+            <span>#1 Luxury Pet Service in Lagos, Nigeria</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Five-Star Pet Care Crafted With <span class="text-gradient">Pure Love</span> 🌸🐾
+          </h1>
+          
+          <p class="hero-subtitle">
+            Pampering your fur babies with premium spa grooming, climate-controlled daycare, and safe daily walking across Lekki, Ikoyi & Victoria Island.
+          </p>
 
-  <!-- Services -->
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start gap-3">
+            <button class="btn btn-custom btn-primary-custom" data-bs-toggle="modal" data-bs-target="#bookingModal">
+              <i class="bi bi-calendar-check-fill"></i>
+              Book Appointment Now
+            </button>
+            <a href="#services" class="btn btn-custom btn-secondary-custom">
+              Explore Services
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item text-center text-lg-start">
+              <h4>1,500+</h4>
+              <p>Happy Pets Served</p>
+            </div>
+            <div class="stat-item text-center text-lg-start">
+              <h4>4.9 ★</h4>
+              <p>Customer Rating</p>
+            </div>
+            <div class="stat-item text-center text-lg-start">
+              <h4>100%</h4>
+              <p>Certified Handlers</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="hero-image-wrapper">
+            <img src="https://images.pexels.com/photos/1809341/pexels-photo-1809341.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Happy Groomed Dog at Petal & Paw" class="hero-main-img">
+            
+            <!-- Floating Badge Top Right -->
+            <div class="floating-card-badge badge-top-right">
+              <div class="badge-icon-circle bg-success">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <div>
+                <h6 class="m-0 fw-bold">Strict Hygiene</h6>
+                <small class="text-muted">100% Sanitized Hub</small>
+              </div>
+            </div>
+
+            <!-- Floating Badge Bottom Left -->
+            <div class="floating-card-badge badge-bottom-left">
+              <div class="badge-icon-circle bg-warning text-dark">
+                <i class="bi bi-camera-video-fill"></i>
+              </div>
+              <div>
+                <h6 class="m-0 fw-bold">Live Photo Updates</h6>
+                <small class="text-muted">Direct to WhatsApp</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
   <section id="services">
-    <h2>Our <span class="highlight">Services</span></h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://images.pexels.com/photos/6235225/pexels-photo-6235225.jpeg" alt="Dog Grooming">
-        <div class="card-content">
-          <h3>Premium Grooming</h3>
-          <p>Professional bath, haircut, styling, nail trimming, ear cleaning, teeth brushing and de-shedding. We handle both dogs and cats with care.</p>
-          <strong>Starting from ₦25,000</strong>
-        </div>
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="badge-custom mb-2">Signature Care</div>
+        <h2>Our Premium <span class="text-gradient">Services</span></h2>
+        <p>Tailored luxury experiences designed for the happiness, wellness, and style of your beloved cats and dogs.</p>
       </div>
-      <div class="card">
-        <img src="https://images.pexels.com/photos/9986357/pexels-photo-9986357.jpeg" alt="Pet Daycare">
-        <div class="card-content">
-          <h3>Pet Daycare</h3>
-          <p>Supervised play, socialization with other pets, feeding, and cozy rest time in our air-conditioned facility.</p>
-          <strong>Full Day ₦35,000 | Half Day ₦20,000</strong>
+
+      <div class="row g-4">
+        <!-- Service Card 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img src="https://images.pexels.com/photos/6235225/pexels-photo-6235225.jpeg" alt="Premium Dog & Cat Grooming">
+              <div class="price-tag">From ₦25,000</div>
+            </div>
+            <div class="service-body">
+              <h3>Royal Spa & Grooming</h3>
+              <p>Full organic bath, precision haircut, coat styling, nail clipping, ear cleaning, and dental hygiene therapy.</p>
+              
+              <ul class="feature-bullets">
+                <li><i class="bi bi-check-circle-fill"></i> Hydro-massage warm wash</li>
+                <li><i class="bi bi-check-circle-fill"></i> Hypoallergenic botanical shampoo</li>
+                <li><i class="bi bi-check-circle-fill"></i> De-shedding & blow dry</li>
+              </ul>
+
+              <button class="btn btn-custom btn-secondary-custom w-100 mt-auto" onclick="selectService('Royal Spa & Grooming')">
+                Book Spa Session
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <img src="https://images.pexels.com/photos/6131165/pexels-photo-6131165.jpeg" alt="Dog Walking">
-        <div class="card-content">
-          <h3>Dog Walking & Home Sitting</h3>
-          <p>Daily walks in safe areas, potty breaks, and overnight home sitting with photo & video updates.</p>
-          <strong>30-min Walk ₦12,000</strong>
+
+        <!-- Service Card 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img src="https://images.pexels.com/photos/9986357/pexels-photo-9986357.jpeg" alt="Pet Daycare Lagos">
+              <div class="price-tag">Full Day ₦35,000 | Half ₦20,000</div>
+            </div>
+            <div class="service-body">
+              <h3>Luxury Pet Daycare</h3>
+              <p>Supervised fun, socialization games, gourmet feeding, and cozy nap quarters in our climate-controlled facility.</p>
+              
+              <ul class="feature-bullets">
+                <li><i class="bi bi-check-circle-fill"></i> Air-conditioned play suites</li>
+                <li><i class="bi bi-check-circle-fill"></i> Constant live handler supervision</li>
+                <li><i class="bi bi-check-circle-fill"></i> Daily video & photo broadcasts</li>
+              </ul>
+
+              <button class="btn btn-custom btn-secondary-custom w-100 mt-auto" onclick="selectService('Luxury Pet Daycare')">
+                Reserve Daycare Spot
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img src="https://images.pexels.com/photos/6131165/pexels-photo-6131165.jpeg" alt="Dog Walking and Sitting">
+              <div class="price-tag">30-min Walk ₦12,000</div>
+            </div>
+            <div class="service-body">
+              <h3>Dog Walking & Home Sitting</h3>
+              <p>Energizing neighborhood walks in safe Lekki/VI estates, potty routine, and attentive overnight home care.</p>
+              
+              <ul class="feature-bullets">
+                <li><i class="bi bi-check-circle-fill"></i> GPS-tracked walking routes</li>
+                <li><i class="bi bi-check-circle-fill"></i> Hydration & treat breaks</li>
+                <li><i class="bi bi-check-circle-fill"></i> Overnight house sitting option</li>
+              </ul>
+
+              <button class="btn btn-custom btn-secondary-custom w-100 mt-auto" onclick="selectService('Dog Walking & Home Sitting')">
+                Schedule a Walk
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Why Choose Us -->
-  <section id="whyus" style="background:#f0f8f0;">
-    <h2>Why Pet Parents Choose Petal & Paw</h2>
-    <div class="grid">
-      <div class="card">
-        <div class="card-content">
-          <h3>❤️ Experienced & Loving Team</h3>
-          <p>Our groomers and handlers are trained, animal-loving professionals with years of experience.</p>
-        </div>
+  <!-- Why Choose Us Section -->
+  <section id="whyus" class="why-section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="badge-custom badge-gold mb-2">The Petal & Paw Promise</div>
+        <h2>Why Lagos Pet Parents <span class="text-gradient">Trust Us</span></h2>
+        <p>We treat every pet like royalty, providing unmatched safety, affection, and professional excellence.</p>
       </div>
-      <div class="card">
-        <div class="card-content">
-          <h3>🧼 Clean & Safe Environment</h3>
-          <p>Fully sanitized facility with separate areas for dogs and cats. We follow strict hygiene standards.</p>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="why-card text-center">
+            <div class="why-icon-box mx-auto">
+              <i class="bi bi-heart-pulse-fill"></i>
+            </div>
+            <h4 class="mb-3">Certified & Loving Staff</h4>
+            <p class="text-muted m-0">Our professional handlers and groomers are certified, gentle, and passionate about animal welfare.</p>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <h3>📸 Regular Updates</h3>
-          <p>Get photos and videos of your pet during daycare or walks so you never miss a moment.</p>
+
+        <div class="col-md-4">
+          <div class="why-card text-center">
+            <div class="why-icon-box mx-auto">
+              <i class="bi bi-shield-lock-fill"></i>
+            </div>
+            <h4 class="mb-3">Ultra-Sanitized Suites</h4>
+            <p class="text-muted m-0">Hospital-grade sterilization with separate, quiet play zones for cats and dogs of all sizes.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="why-card text-center">
+            <div class="why-icon-box mx-auto">
+              <i class="bi bi-camera-fill"></i>
+            </div>
+            <h4 class="mb-3">Instant Photo Updates</h4>
+            <p class="text-muted m-0">Receive HD pictures and video stories throughout your pet's stay so you never miss a moment.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Gallery -->
+  <!-- Gallery Section (Complete Set of 8 Images) -->
   <section id="gallery">
-    <h2>Happy Pets in Lagos</h2>
-    <div class="gallery-grid">
-      <img src="https://images.pexels.com/photos/6235225/pexels-photo-6235225.jpeg" alt="Groomed Dog">
-      <img src="https://images.pexels.com/photos/9986357/pexels-photo-9986357.jpeg" alt="Daycare">
-      <img src="https://images.pexels.com/photos/6131165/pexels-photo-6131165.jpeg" alt="Dog Walking">
-      <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1" alt="Cute Puppy">
-      <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba" alt="Playful Dogs">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="badge-custom mb-2">Visual Moments</div>
+        <h2>Happy Pets of <span class="text-gradient">Petal & Paw</span></h2>
+        <p>Take a peek at our fresh grooms, energetic daycare games, and peaceful lounge hours.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Photo 1 -->
+        <div class="gallery-item">
+          <img src="https://images.pexels.com/photos/6235225/pexels-photo-6235225.jpeg" alt="Groomed Golden Retriever">
+          <div class="gallery-overlay">
+            <div>
+              <h6 class="m-0 fw-bold">Bello - Victoria Island</h6>
+              <small>Fresh Hydro Spa & Trim</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="gallery-item">
+          <img src="https://images.pexels.com/photos/9986357/pexels-photo-9986357.jpeg" alt="Playful Pups Daycare">
+          <div class="gallery-overlay">
+            <div>
+              <h6 class="m-0 fw-bold">Coco & Max - Lekki Phase 1</h6>
+              <small>Afternoon Socialization</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="gallery-item">
+          <img src="https://images.pexels.com/photos/6131165/pexels-photo-6131165.jpeg" alt="Dog Walking Walkies">
+          <div class="gallery-overlay">
+            <div>
+              <h6 class="m-0 fw-bold">Rocky - Ikoyi</h6>
+              <small>Evening Park Walk</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 4 -->
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1" alt="Cute Pomeranian">
+          <div class="gallery-overlay">
+            <div>
+              <h6 class="m-0 fw-bold">Teddy - Banana Island</h6>
+              <small>Fluffy Bear Grooming</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 5 -->
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba" alt="Persian Cat Spa">
+          <div class="gallery-overlay">
+            <div>
+              <h6 class="m-0 fw-bold">Simba - Ikeja GRA</h6>
+              <small>Gentle Feline Pampering</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 6 -->
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e" alt="Happy Groomed Beagle">
+          <div class="gallery-overlay">
+            <div>
+              <h6 class="m-0 fw-bold">Bruno - Chevron Lekki</h6>
+              <small>De-shedding & Coat Polish</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 7 -->
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8" alt="Cute Corgi Bath">
+          <div class="gallery-overlay">
+            <div>
+              <h6 class="m-0 fw-bold">Bella - V.I. Annex</h6>
+              <small>Aromatic Botanical Bath</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 8 -->
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c" alt="Daycare Lounge Play">
+          <div class="gallery-overlay">
+            <div>
+              <h6 class="m-0 fw-bold">Duke & Daisy - Osapa London</h6>
+              <small>Indoor Daycare Fun</small>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" style="background:#fff;">
-    <h2>Visit or Contact Us</h2>
-    <div style="max-width:700px; margin:40px auto; text-align:center; background:white; padding:50px; border-radius:20px; box-shadow:0 10px 40px rgba(0,0,0,0.1);">
-      <p><strong>📍 Address:</strong> 12 Adeola Odeku Street, Victoria Island, Lagos, Nigeria</p>
-      <p><strong>📞 Phone:</strong> +234 803 456 7890</p>
-      <p><strong>📧 Email:</strong> hello@petalandpaw.com</p>
-      <p><strong>🕒 Hours:</strong> Monday - Saturday: 8:00 AM – 6:00 PM</p>
-      <p><strong>🌟 We serve Lekki, Ikoyi, Victoria Island & Mainland Lagos</strong></p>
-      
-      <a href="https://wa.me/2348034567890" class="btn" style="margin-top:30px;">Book via WhatsApp →</a>
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="bg-light">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="badge-custom badge-gold mb-2">Verified Reviews</div>
+        <h2>What Pet Parents <span class="text-gradient">Say</span></h2>
+        <p>Read real experiences from pet owners across Lagos who trust Petal & Paw.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-text">"Petal & Paw is a lifesaver! My Frenchie Milo gets so excited whenever we arrive for daycare. The photo updates give me absolute peace of mind while at work."</p>
+            <div class="user-info">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150" alt="Customer Avatar" class="user-avatar">
+              <div>
+                <h6 class="m-0 fw-bold">Amina O.</h6>
+                <small class="text-muted">Victoria Island, Lagos</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-text">"The best grooming service in Lekki by far. They handled my anxious Lhasa Apso with such patience and tenderness. He smells amazing for weeks!"</p>
+            <div class="user-info">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150" alt="Customer Avatar" class="user-avatar">
+              <div>
+                <h6 class="m-0 fw-bold">Emeka K.</h6>
+                <small class="text-muted">Lekki Phase 1</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-text">"Professional, punctual, and extremely clean! The dog walking service while I traveled was seamless. I highly recommend them to all pet parents."</p>
+            <div class="user-info">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150" alt="Customer Avatar" class="user-avatar">
+              <div>
+                <h6 class="m-0 fw-bold">Dr. Zainab B.</h6>
+                <small class="text-muted">Ikoyi, Lagos</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <footer style="background:#222; color:white; text-align:center; padding:70px 20px;">
-    <p>&copy; 2026 Petal & Paw Pet Services Lagos. All Rights Reserved.</p>
-    <p>Made with ❤️ for every Nigerian pet and their loving owner</p>
+  <!-- Contact & Location Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6">
+            <div class="badge-custom mb-3">Get In Touch</div>
+            <h2 class="mb-4">Visit Us or <span class="text-gradient">Book via WhatsApp</span></h2>
+            <p class="text-muted mb-4 fs-5">We are conveniently situated in the heart of Victoria Island, delivering white-glove pet care across Lagos.</p>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <h6 class="fw-bold m-0">Location Address</h6>
+                <p class="m-0 text-muted">12 Adeola Odeku Street, Victoria Island, Lagos, Nigeria</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="bi bi-telephone-fill"></i></div>
+              <div>
+                <h6 class="fw-bold m-0">Phone / Call Line</h6>
+                <p class="m-0 text-muted">+234 803 456 7890</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <h6 class="fw-bold m-0">Email Address</h6>
+                <p class="m-0 text-muted">hello@petalandpaw.com</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="bi bi-clock-fill"></i></div>
+              <div>
+                <h6 class="fw-bold m-0">Working Hours</h6>
+                <p class="m-0 text-muted">Monday – Saturday: 8:00 AM – 6:00 PM</p>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <h6 class="fw-bold mb-2">Prime Coverage Areas:</h6>
+              <span class="location-chip">📍 Victoria Island</span>
+              <span class="location-chip">📍 Lekki Phase 1 & 2</span>
+              <span class="location-chip">📍 Ikoyi & Banana Island</span>
+              <span class="location-chip">📍 Ikeja GRA & Mainland</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="bg-light p-4 p-md-5 rounded-4 border text-center shadow-sm">
+              <div class="brand-icon mx-auto mb-3" style="width:56px; height:56px; font-size:1.8rem;">
+                <i class="bi bi-whatsapp"></i>
+              </div>
+              <h3 class="fw-bold mb-2">Instant Booking Desk</h3>
+              <p class="text-muted mb-4">Connect directly with our care manager on WhatsApp for immediate appointments & inquiries.</p>
+
+              <a href="https://wa.me/2348034567890?text=Hello%20Petal%20%26%20Paw,%20I%20would%20like%20to%20book%20a%20pet%20care%20session!" target="_blank" class="btn btn-custom btn-whatsapp btn-lg w-100 py-3 mb-3">
+                <i class="bi bi-whatsapp me-2 fs-4"></i>
+                Chat Directly on WhatsApp
+              </a>
+
+              <button class="btn btn-custom btn-primary-custom w-100 py-3" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                <i class="bi bi-calendar-event me-2"></i>
+                Fill Online Booking Form
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Booking Modal -->
+  <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom d-flex justify-content-between align-items-center">
+          <div>
+            <h5 class="modal-title fw-bold m-0" id="bookingModalLabel">🌸 Book Pet Care Appointment</h5>
+            <small>Quick & easy online reservation</small>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        
+        <div class="modal-body p-4">
+          <form id="appointmentForm" onsubmit="handleFormSubmit(event)">
+            <div class="mb-3">
+              <label class="form-label fw-bold small">Your Full Name</label>
+              <input type="text" id="ownerName" class="form-control form-control-lg rounded-3" placeholder="e.g. Chimamanda Adichie" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label fw-bold small">Pet Name & Type</label>
+              <input type="text" id="petDetails" class="form-control form-control-lg rounded-3" placeholder="e.g. Bruno (Golden Retriever Dog)" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label fw-bold small">Select Service</label>
+              <select id="serviceSelect" class="form-select form-select-lg rounded-3" required>
+                <option value="Royal Spa & Grooming">Royal Spa & Grooming (From ₦25,000)</option>
+                <option value="Luxury Pet Daycare">Luxury Pet Daycare (Full Day ₦35,000)</option>
+                <option value="Dog Walking & Home Sitting">Dog Walking & Home Sitting (30-min ₦12,000)</option>
+              </select>
+            </div>
+
+            <div class="row g-3 mb-4">
+              <div class="col-6">
+                <label class="form-label fw-bold small">Preferred Date</label>
+                <input type="date" id="bookDate" class="form-control form-control-lg rounded-3" required>
+              </div>
+              <div class="col-6">
+                <label class="form-label fw-bold small">Location Area</label>
+                <select id="locationSelect" class="form-select form-select-lg rounded-3" required>
+                  <option value="Victoria Island">Victoria Island</option>
+                  <option value="Lekki Phase 1/2">Lekki Phase 1/2</option>
+                  <option value="Ikoyi / Banana Island">Ikoyi / Banana Island</option>
+                  <option value="Mainland Lagos">Mainland Lagos</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-custom btn-primary-custom w-100 py-3">
+              <i class="bi bi-send-fill me-2"></i>
+              Confirm & Book via WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ultra Readable Dark Footer -->
+  <footer>
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4">
+          <a class="brand-logo text-white mb-3 d-inline-flex align-items-center gap-2" href="#">
+            <img src="assets/logo.svg" alt="Petal & Paw Logo" width="48" height="48">
+            <span class="text-white">Petal & Paw</span>
+          </a>
+          <p class="mt-3 text-white">Nigeria's premier pet grooming and daycare hub. Providing loving, high-standard care for pets in Lagos.</p>
+          <div class="mt-4">
+            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-whatsapp"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 ms-auto">
+          <h4 class="text-white">Quick Links</h4>
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#services" class="footer-link">Services</a>
+          <a href="#whyus" class="footer-link">Why Us</a>
+          <a href="#gallery" class="footer-link">Gallery</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+
+        <div class="col-lg-3 col-6">
+          <h4 class="text-white">Services</h4>
+          <a href="#services" class="footer-link">Royal Spa Grooming</a>
+          <a href="#services" class="footer-link">Luxury Daycare</a>
+          <a href="#services" class="footer-link">Daily Dog Walking</a>
+          <a href="#services" class="footer-link">Overnight Home Sitting</a>
+        </div>
+
+        <div class="col-lg-3">
+          <h4 class="text-white">Contact Info</h4>
+          <p class="m-0 text-white">📍 12 Adeola Odeku St, VI, Lagos</p>
+          <p class="m-0 text-white">📞 +234 803 456 7890</p>
+          <p class="m-0 text-white">📧 hello@petalandpaw.com</p>
+        </div>
+      </div>
+
+      <div class="border-top border-secondary pt-4 text-center">
+        <p class="m-0 text-white">&copy; 2026 Petal & Paw Pet Services Lagos. All Rights Reserved. Crafted with ❤️ for Every Nigerian Pet.</p>
+      </div>
+    </div>
   </footer>
-  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Scripts -->
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Pre-select service when clicking service card button
+    function selectService(serviceName) {
+      const select = document.getElementById('serviceSelect');
+      if (select) {
+        select.value = serviceName;
+      }
+      const bookingModal = new bootstrap.Modal(document.getElementById('bookingModal'));
+      bookingModal.show();
+    }
+
+    // Handle Appointment Form Submission to WhatsApp
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const ownerName = document.getElementById('ownerName').value;
+      const petDetails = document.getElementById('petDetails').value;
+      const service = document.getElementById('serviceSelect').value;
+      const date = document.getElementById('bookDate').value;
+      const location = document.getElementById('locationSelect').value;
+
+      const text = `Hello Petal & Paw! 🌸🐾%0A%0A*New Booking Request:*%0A- *Owner:* ${encodeURIComponent(ownerName)}%0A- *Pet Details:* ${encodeURIComponent(petDetails)}%0A- *Service:* ${encodeURIComponent(service)}%0A- *Preferred Date:* ${encodeURIComponent(date)}%0A- *Location:* ${encodeURIComponent(location)}%0A%0APlease confirm availability!`;
+
+      window.open(`https://wa.me/2348034567890?text=${text}`, '_blank');
+      
+      const modalElement = document.getElementById('bookingModal');
+      const modal = bootstrap.Modal.getInstance(modalElement);
+      if (modal) modal.hide();
+    }
+
+    // Set min date on datepicker to today
+    document.addEventListener('DOMContentLoaded', () => {
+      const dateInput = document.getElementById('bookDate');
+      if (dateInput) {
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.min = today;
+        dateInput.value = today;
+      }
+    });
+  </script>
 </body>
 </html>
